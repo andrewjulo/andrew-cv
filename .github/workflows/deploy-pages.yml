@@ -1,5 +1,7 @@
 # Build and deploy the site to GitHub Pages at https://andrewjulo.github.io/andrew-cv/
 # Runs on every push to main.
+#
+# Required: In repo Settings → Pages → Build and deployment, set Source to "GitHub Actions".
 
 name: Deploy to GitHub Pages
 
@@ -39,6 +41,9 @@ jobs:
       - name: Add SPA fallback
         run: cp dist/index.html dist/404.html
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -47,6 +52,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

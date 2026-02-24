@@ -33,3 +33,9 @@ The site is deployed to **https://andrewjulo.github.io/andrew-cv/** via GitHub A
 - **Automatic deploys**: Every push to `main` builds and deploys to GitHub Pages.
 - **Enable Pages**: In the repo go to **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”). The workflow is `.github/workflows/deploy-pages.yml`.
 - Local dev with the same base path: run `npm run dev` and open **http://localhost:8080/andrew-cv/**.
+
+### If the site doesn't appear
+
+1. **Set the Pages source**: **Settings → Pages**. Under "Build and deployment", set **Source** to **GitHub Actions**. If it's still "Deploy from a branch", the workflow runs but nothing is published.
+2. **Check the workflow run**: Open the **Actions** tab and open the latest "Deploy to GitHub Pages" run. If the build or deploy job failed, fix the error shown there.
+3. **Wait a minute**: After a successful deploy, the site can take 1–2 minutes to be available.
