@@ -1,12 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useScrollReveal } from '@/hooks/useScrollReveal';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import CredibilityBanner from '@/components/CredibilityBanner';
+import ProductsSection from '@/components/ProductsSection';
+import CareerTimeline from '@/components/CareerTimeline';
+import SkillsSection from '@/components/SkillsSection';
+import PhilosophySection from '@/components/PhilosophySection';
+import MetricsSection from '@/components/MetricsSection';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
 
 const Index = () => {
+  const scrollRef = useScrollReveal();
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div ref={scrollRef} className="min-h-screen bg-background">
+      <Navbar />
+      <HeroSection />
+      <CredibilityBanner />
+      <MetricsSection />
+      <ProductsSection />
+      <CareerTimeline />
+      <SkillsSection />
+      <PhilosophySection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 };
