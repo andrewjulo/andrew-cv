@@ -22,10 +22,10 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center gap-3">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors">
+            <a href="https://github.com/andrewjulo" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors">
               <Github size={18} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors">
+            <a href="https://www.linkedin.com/in/drewjulo/" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors">
               <Linkedin size={18} />
             </a>
             <a href="mailto:drewjulo25@gmail.com" className="p-2 text-muted-foreground hover:text-foreground transition-colors">

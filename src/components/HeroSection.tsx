@@ -1,5 +1,5 @@
 import andrewPhoto from '@/assets/andrew-photo.png';
-import { ArrowRight, Download, Mail } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
 
 const stats = [
   { value: '10+', label: 'Years Experience' },
@@ -42,8 +42,8 @@ const HeroSection = () => {
               <a href="#contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-secondary text-secondary-foreground font-medium hover:bg-secondary/80 transition-all border border-border">
                 <Mail size={16} /> Contact Me
               </a>
-              <a href="#" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-muted-foreground hover:text-foreground transition-colors">
-                <Download size={16} /> Download CV
+              <a href="#contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-muted-foreground hover:text-foreground transition-colors">
+                <Mail size={16} /> Contact me for my CV
               </a>
             </div>
 

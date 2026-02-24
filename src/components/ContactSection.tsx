@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Github, Linkedin } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -34,18 +34,6 @@ const ContactSection = () => {
                 </a>
               </div>
             </div>
-            <div className="flex items-center gap-4">
-              <div className="p-2.5 rounded-lg bg-primary/10 text-primary">
-                <Phone size={18} />
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Phone</p>
-                <a href="tel:+256709958759" className="text-foreground font-medium hover:text-primary transition-colors">
-                  +256 709 958759
-                </a>
-              </div>
-            </div>
-
             <div className="flex gap-3 pt-4 border-t border-border/50">
               <a
                 href="mailto:drewjulo25@gmail.com"
@@ -54,7 +42,7 @@ const ContactSection = () => {
                 <Mail size={16} /> Send Email
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/andrewjulo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-lg bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors border border-border"
@@ -62,7 +50,7 @@ const ContactSection = () => {
                 <Github size={18} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/drewjulo/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-lg bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors border border-border"
